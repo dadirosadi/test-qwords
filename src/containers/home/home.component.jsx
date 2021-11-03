@@ -59,7 +59,7 @@ const Home = () => {
          description: "Qwords sangant membantu dalam management data di cloud"
       },
       {
-         img: "https://tse2.mm.bing.net/th?id=OIP.01k6mwOiHYeouKekyJO4_QHaJ5&pid=Api&P=0&w=300&h=300",
+         img: "https://tse2.mm.bing.net/th?id=OIP.Fzieqpbf1hIrZGli33c5sQHaHa&pid=Api&P=0&w=300&h=300",
          name: 'James bond',
          place: "CEO Bukalapak",
          description: "Dengan adanya qwords mudah bagi para pengusaha dalam management data di cloud"
