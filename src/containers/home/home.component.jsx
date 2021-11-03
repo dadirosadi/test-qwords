@@ -148,10 +148,10 @@ const Home = () => {
             <span>Testimonial</span>
          </div>
          <div className="text-sm font-medium mb-10">qwords selalu berupaya untuk meningkatkan kualitas dan efektivitas pelayanan web hosting di indonesia.</div>
-         <div className="bg-white">
+         <div className="bg-white  flex justify-around gap-10">
             {reviews.map((x, i) => {
                return <div key={i} className="img-cards my-1 text-base justify-center items-center  bg-white">
-                  <div className="flex justify-around gap-10">
+                  <div className="flex">
                      <div className="flex-1 text-center bg-white">
                         <div className="flex justify-center items-center p-16">
                            <img className="object-cover w-52 h-32 rounded-full" src={x.img} />
