@@ -66,102 +66,6 @@ const Home = () => {
       },
 
    ]
-   const config = {
-      arrows: false,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      // centerMode: true,
-      centerPadding: '100px',
-      // autoplay: true,
-      autoplaySpeed: 2000,
-      responsive: [
-         {
-            breakpoint: 768,
-            settings: {
-               arrows: false,
-               centerMode: true,
-               centerPadding: '40px',
-               slidesToShow: 3
-            }
-         },
-         {
-            breakpoint: 480,
-            settings: {
-               arrows: false,
-               centerMode: true,
-               centerPadding: '40px',
-               slidesToShow: 1
-            }
-         }
-      ]
-   };
-
-   const configs = {
-      arrows: false,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      // centerMode: true,
-      centerPadding: '50px',
-      autoplay: true,
-      autoplaySpeed: 2000,
-      responsive: [
-         {
-            breakpoint: 768,
-            settings: {
-               arrows: false,
-               centerMode: true,
-               centerPadding: '40px',
-               slidesToShow: 3
-            }
-         },
-         {
-            breakpoint: 480,
-            settings: {
-               arrows: false,
-               centerMode: true,
-               centerPadding: '40px',
-               slidesToShow: 1
-            }
-         }
-      ]
-   };
-
-   const configheader = {
-      arrows: true,
-      dots: true,
-      infinite: true,
-      speed: 200,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      centerMode: true,
-      centerPadding: '50px',
-      autoplay: true,
-      autoplaySpeed: 2000,
-      responsive: [
-         {
-            breakpoint: 768,
-            settings: {
-               arrows: false,
-               centerMode: true,
-               centerPadding: '40px',
-               slidesToShow: 3
-            }
-         },
-         {
-            breakpoint: 480,
-            settings: {
-               arrows: false,
-               centerMode: true,
-               centerPadding: '40px',
-               slidesToShow: 1
-            }
-         }
-      ]
-   };
 
    return <div className="">
       <div className=" max-w-6xl mx-auto flex gap-10 px-4 pb-5 bg-white pt-20" id="home">
@@ -245,29 +149,27 @@ const Home = () => {
          </div>
          <div className="text-sm font-medium mb-10">qwords selalu berupaya untuk meningkatkan kualitas dan efektivitas pelayanan web hosting di indonesia.</div>
          <div className="bg-white">
-            <Slider {...configs}>
-               {reviews.map((x, i) => {
-                  return <div key={i} className="img-cards my-1 text-base justify-center items-center  bg-white">
-                     <div className="flex">
-                        <div className="flex-1 text-center bg-white">
-                           <div className="flex justify-center items-center p-16">
-                              <img className="object-cover w-52 h-32 rounded-full" src={x.img} />
-                           </div>
+            {reviews.map((x, i) => {
+               return <div key={i} className="img-cards my-1 text-base justify-center items-center  bg-white">
+                  <div className="flex">
+                     <div className="flex-1 text-center bg-white">
+                        <div className="flex justify-center items-center p-16">
+                           <img className="object-cover w-52 h-32 rounded-full" src={x.img} />
                         </div>
-                        <div className="flex-1 text-xs py-2 px-1 bg-white">
-                           <div className="flex justify-center flex-col h-full pr-8">
-                              <div className="flex justify-center flex-col mb-3">
-                                 <span className="text-thirdary text-sm font-medium ">{x.name}</span>
-                                 <span className="text-xs font-medium">{x.place}</span>
-                              </div>
-
-                              <span>{x.description}</span>
+                     </div>
+                     <div className="flex-1 text-xs py-2 px-1 bg-white">
+                        <div className="flex justify-center flex-col h-full pr-8">
+                           <div className="flex justify-center flex-col mb-3">
+                              <span className="text-thirdary text-sm font-medium ">{x.name}</span>
+                              <span className="text-xs font-medium">{x.place}</span>
                            </div>
+
+                           <span>{x.description}</span>
                         </div>
                      </div>
                   </div>
-               })}
-            </Slider>
+               </div>
+            })}
          </div>
       </div>
    </div >
