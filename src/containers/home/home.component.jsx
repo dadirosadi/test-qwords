@@ -48,11 +48,7 @@ const Home = () => {
          title: "High Enterprise Server",
          text: 'Standar server Qwords adalah server kelas enterprise Dual Xeon Octa Core yang merupakan hardware kelas terbaik.'
       },
-      {
-         img: "https://tse2.mm.bing.net/th?id=OIP.IuA09sY_JbAxiqKAEwtKjAHaFj&pid=Api&P=0&w=240&h=181",
-         title: "High Enterprise Server",
-         text: 'Standar server Qwords adalah server kelas enterprise Dual Xeon Octa Core yang merupakan hardware kelas terbaik.'
-      },
+
    ]
 
    const reviews = [
@@ -196,33 +192,30 @@ const Home = () => {
                <div className="flex  mb-10 justify-between">
                   <span className="text-3xl font-bold text-primary">Product</span>
                   <span className="text-sm cursor-pointer"></span></div>
-               <div>
-                  <Slider {...config}>
-                     {products.map((x, i) => {
-                        return <div key={i} className="img-card text-base">
-                           <img className="img" src={x.img} />
-                           <div className="bg-white p-5">
-                              <div className="card-text text-lg font-medium">{x.title}</div>
-                              <div className="card-text text-lg font-bold"> <span className="font-bold">$20</span></div>
-                              <div className="card-text text-sm font-medium h-16">{x.text}</div>
-                           </div>
+               <div className="flex jutify-between gap-10">
+                  {products.map((x, i) => {
+                     return <div key={i} className="img-card text-base">
+                        <img className="img" src={x.img} />
+                        <div className="bg-white p-5">
+                           <div className="card-text text-lg font-medium">{x.title}</div>
+                           <div className="card-text text-lg font-bold"> <span className="font-bold">$20</span></div>
+                           <div className="card-text text-sm font-medium h-16">{x.text}</div>
                         </div>
-                     })}
-                  </Slider>
+                     </div>
+                  })}
+
                </div>
-               <div className="mt-10">
-                  <Slider {...config}>
-                     {products.map((x, i) => {
-                        return <div key={i} className="img-card text-base">
-                           <img className="img" src={x.img} />
-                           <div className="bg-white p-5">
-                              <div className="card-text text-lg font-medium">{x.title}</div>
-                              <div className="card-text text-lg font-bold"> <span className="font-bold">$20</span></div>
-                              <div className="card-text text-sm font-medium h-16">{x.text}</div>
-                           </div>
+               <div className="mt-10 flex jutify-between gap-10">
+                  {products.map((x, i) => {
+                     return <div key={i} className="img-card text-base">
+                        <img className="img" src={x.img} />
+                        <div className="bg-white p-5">
+                           <div className="card-text text-lg font-medium">{x.title}</div>
+                           <div className="card-text text-lg font-bold"> <span className="font-bold">$20</span></div>
+                           <div className="card-text text-sm font-medium h-16">{x.text}</div>
                         </div>
-                     })}
-                  </Slider>
+                     </div>
+                  })}
                </div>
             </div>
          </div>
@@ -232,18 +225,16 @@ const Home = () => {
             <div className="flex  mb-10 justify-between">
                <span className="text-3xl font-bold text-primary">Feature</span>
                <span className="text-sm cursor-pointer"></span></div>
-            <div>
-               <Slider {...config}>
-                  {feature.map((x, i) => {
-                     return <div key={i} className="img-card text-base">
-                        <img className="img" src={x.img} />
-                        <div className="bg-white p-5">
-                           <div className="card-text text-lg font-bold">{x.title}</div>
-                           <div className="card-text text-sm font-medium h-16">{x.text}</div>
-                        </div>
+            <div className="flex jutify-between gap-10">
+               {feature.map((x, i) => {
+                  return <div key={i} className="img-card text-base">
+                     <img className="img" src={x.img} />
+                     <div className="bg-white p-5">
+                        <div className="card-text text-lg font-bold">{x.title}</div>
+                        <div className="card-text text-sm font-medium h-16">{x.text}</div>
                      </div>
-                  })}
-               </Slider>
+                  </div>
+               })}
             </div>
          </div>
       </div>
