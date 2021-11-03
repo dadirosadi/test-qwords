@@ -68,12 +68,6 @@ const Home = () => {
          place: "CEO Bukalapak",
          description: "Dengan adanya qwords mudah bagi para pengusaha dalam management data di cloud"
       },
-      {
-         img: "https://tse2.mm.bing.net/th?id=OIP.01k6mwOiHYeouKekyJO4_QHaJ5&pid=Api&P=0&w=300&h=300",
-         name: 'Dadi',
-         place: "CEO Shopee",
-         description: "Dengan adanya qwords mudah bagi para pengusaha dalam management data di cloud"
-      },
 
    ]
    const config = {
@@ -114,7 +108,7 @@ const Home = () => {
       speed: 500,
       slidesToShow: 2,
       slidesToScroll: 1,
-      centerMode: true,
+      // centerMode: true,
       centerPadding: '50px',
       autoplay: true,
       autoplaySpeed: 2000,
